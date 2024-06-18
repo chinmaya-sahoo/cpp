@@ -30,5 +30,7 @@ int main(){
     
     v.pop_back();
     v.pop_back();
+    cout<<"size : "<<v.size()<<endl;
+    cout<<"capacity : "<<v.capacity()<<endl;
     return 0 ;
 }
