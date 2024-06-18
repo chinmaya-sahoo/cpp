@@ -33,7 +33,11 @@ int main(){
     cout<<"size : "<<v.size()<<endl;
     cout<<"capacity : "<<v.capacity()<<endl;
     
-    v.insert(v.begin()+2,7); //insert 7 at 3rd position
-    
+    v.insert(v.begin()+2,7); //insert 7 at 3rd position from begin
+    v.insert(v.end()-2,5);   //insert 5 at 3rd position from end
+
+    v.erase(v.begin()+3);   // delete 3rd element from begin
+    v.erase(v.end()-3);   // delete 3rd element from end
+
     return 0 ;
 }
