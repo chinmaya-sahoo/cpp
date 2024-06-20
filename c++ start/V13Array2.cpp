@@ -26,17 +26,34 @@ int main()
     // }
 
     // for each loop
-    
-    vector<int> v(5);
-    for (int &ele : v)
-    {
+
+    // vector<int> v(5);
+    // for (int &ele : v)
+    // {
+    //     cin >> ele;
+    // }
+
+    // for (int ele : v)
+    // {
+    //     cout<<ele<<" ";
+    // }
+
+    // while loop
+    vector<int> v;
+    int i = 0;
+    while (i < 5)
+    {   
+        int ele;
         cin >> ele;
+        v.push_back(ele);
+        i++;
     }
 
-    for (int ele : v)
+    int idx = 0;
+    while (idx < 5)
     {
-        cout<<ele<<" ";
+        cout << v[idx]<<" ";
+        idx++;
     }
-
     return 0;
 }
