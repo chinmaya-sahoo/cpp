@@ -3,9 +3,9 @@
 using namespace std;
 int main()
 {
-    vector<int>v;
     // for loop
 
+    // vector<int> v;
     // for(int i=0;i<5;i++){
     //     int element;
     //     cin>>element;
@@ -20,11 +20,23 @@ int main()
     //     cin>>v[i];
     // }
 
-    for (int i = 0; i < v.size()+1; i++)
-    {
-        cout<<v[i]<<" ";
-    }
+    // for (int i = 0; i < v.size()+1; i++)
+    // {
+    //     cout<<v[i]<<" ";
+    // }
+
+    // for each loop
     
+    vector<int> v(5);
+    for (int &ele : v)
+    {
+        cin >> ele;
+    }
+
+    for (int ele : v)
+    {
+        cout<<ele<<" ";
+    }
 
     return 0;
 }
