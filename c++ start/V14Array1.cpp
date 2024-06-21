@@ -16,6 +16,6 @@ int main(){
         }
     }
     
-    
+    cout<<"the number pairs with target sum : " << pairs;
     return 0;
 }
