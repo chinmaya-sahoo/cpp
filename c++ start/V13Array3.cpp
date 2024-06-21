@@ -27,5 +27,7 @@ int main()
         }
     }
     
-    cout<<"the last occurance of "<< x << " is : "<< ocr;
+     cout<<"the last occurance of "<< x << " is : "<< ocr;
+
+    //try it furthur from end for better code approach
 }
