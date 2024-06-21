@@ -1,4 +1,4 @@
-//Target Sum
+//Target Sum pairs
 #include<iostream>
 #include<vector>
 using namespace std;
@@ -18,4 +18,5 @@ int main(){
     
     cout<<"the number pairs with target sum : " << pairs;
     return 0;
+    //next try for target sum triplet
 }
