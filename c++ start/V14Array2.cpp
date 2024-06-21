@@ -7,11 +7,15 @@ int main(){
     int ans,check;
     for(int i=0;i<9;i++){
         check=0;
+
         for(int j=i+1;j<9;j++){
+
             if(arr[i]==arr[j]){
                 check=1;
             }
+            
         }
+
         if(check==0) ans=arr[i];
     }
 
