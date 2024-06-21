@@ -8,7 +8,7 @@ int main(){
     cout<<"Enter target : ";
     cin>>target;
     int pairs = 0;
-    for (int i = 0; i < 7; i++){
+    for (int i = 0; i < 8; i++){
         for(int j=i+1;j<8;j++){
             if(arr[i]+arr[j]==target){
                 pairs++;
