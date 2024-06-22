@@ -2,8 +2,17 @@
 #include<iostream>
 #include<vector>
 using namespace std;
-void invers(int arr[],int begin,int end){
+void invers(int arr[],int begin=0,int end){
+    while(begin<end){
+        int temp = arr[begin];
+        arr[begin]=arr[end];
+        arr[end]=temp;
+        begin++;
+        end--;
+    }
 
+    return;
+    
 }
 int main(){
     int size;
