@@ -2,6 +2,9 @@
 #include<iostream>
 #include<vector>
 using namespace std;
+void invers(int arr[],int begin,int end){
+
+}
 int main(){
     int size;
     cout<<"Enter size of array : ";
