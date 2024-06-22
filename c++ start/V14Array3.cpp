@@ -12,7 +12,12 @@ int main(){
         cin>>arr[i];
     }
 
-    
+    int k;
+    cout<<"Enter no. of steps : ";
+    cin>>k;
+    for(int i=0;i<size;i++){
+
+    }
     
     return 0;
 }
