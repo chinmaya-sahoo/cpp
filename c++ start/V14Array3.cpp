@@ -27,9 +27,9 @@ int main(){
     int k;
     cout<<"Enter no. of steps : ";
     cin>>k;
-    for(int i=0;i<size;i++){
-
-    }
+    invers(arr[],0,size);
+    invers(arr[],0,k-1);
+    invers(arr[],k,size);
     
     return 0;
 }
