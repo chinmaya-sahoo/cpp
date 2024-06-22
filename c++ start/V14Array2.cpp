@@ -4,20 +4,26 @@
 using namespace std;
 int main(){
     int arr[]={1,2,3,4,5,4,3,2,1};
-    int ans,check;
+    int ans;
     for(int i=0;i<9;i++){
-        check=0;
 
         for(int j=i+1;j<9;j++){
 
             if(arr[i]==arr[j]){
-                check=1;
+                arr[i]=arr[j]=-1;
             }
             
         }
-
-        if(check==0) ans=arr[i];
+        
     }
+
+    for (int i = 0; i < 9; i++)
+    {
+        if(arr[i]!=-1){
+            ans=arr[i];
+        }
+    }
+    
 
     cout<<"unique element is : "<<ans;
 }
