@@ -1,4 +1,4 @@
-//Rotate array by k steps...where(k<size)
+//Rotate array by k steps...where(may k>size or k<size)
 #include<iostream>
 #include<vector>
 using namespace std;
