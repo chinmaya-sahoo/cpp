@@ -41,3 +41,4 @@ int main(){
 
     return 0;
 }
+//now try it using vector
