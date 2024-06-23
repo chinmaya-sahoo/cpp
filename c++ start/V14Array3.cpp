@@ -2,7 +2,10 @@
 #include<iostream>
 #include<vector>
 using namespace std;
-void invers(int arr[],int start=0,int stop=0){
+// void invers(int arr[],int start =0,int stop) ❌❌
+// void invers(int arr[],int start ,int stop=0) ❌❌
+// void invers(int arr[],int start =0,int stop=0) ✔️✔️
+void invers(int arr[],int start,int stop){ //start aur stop ka default value dena to ek sath dono ko dena padega sirf ek ko dene se error show karega
     while(start<stop){
         int temp = arr[start];
         arr[start]=arr[stop];
