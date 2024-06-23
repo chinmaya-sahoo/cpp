@@ -2,7 +2,7 @@
 #include<iostream>
 #include<vector>
 using namespace std;
-void invers(int arr[],int start=0,int stop){
+void invers(int arr[],int start=0,int stop=0){
     while(start<stop){
         int temp = arr[start];
         arr[start]=arr[stop];
@@ -27,9 +27,13 @@ int main(){
     int k;
     cout<<"Enter no. of steps : ";
     cin>>k;
-    invers(arr,0,size);
+    invers(arr,0,size-1);
     invers(arr,0,k-1);
-    invers(arr,k,size);
+    invers(arr,k,size-1);
     
+    for (int i = 0; i < size; i++){
+        cout<<arr[i]<<" ";
+    }
+
     return 0;
 }
