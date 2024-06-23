@@ -28,6 +28,7 @@ int main(){
     }
 
     int k;
+    k=k%size;
     cout<<"Enter no. of steps : ";
     cin>>k;
     invers(arr,0,size-1);
