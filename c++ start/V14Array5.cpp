@@ -12,4 +12,10 @@ int main(){
     reverse(v.begin(),v.end());
     reverse(v.begin(),v.begin()+k);
     reverse(v.begin()+k,v.end());
+
+    for(int a:v){
+        cout<<a<<" ";
+    }
+    cout<<endl;
+
 }
