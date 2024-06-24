@@ -10,4 +10,5 @@ int main(){
     k=k%v.size();
 
     reverse(v.begin(),v.end());
+    reverse(v.begin(),v.begin()+k);
 }
