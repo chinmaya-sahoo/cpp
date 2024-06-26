@@ -18,5 +18,12 @@ int main(){
     int q;
     cout<<"Enter quaries : ";
     cin>>q;
-          
+    while (q--)
+    {
+        int queryelement;
+        cin>>>queryelement;
+        cout<<freq[queryelement]<endl;
+        
+    }
+    
 }
