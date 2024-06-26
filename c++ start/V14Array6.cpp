@@ -6,11 +6,11 @@ int main(){
     int size;
     cout<<"Enter size of array : ";
     cin>>size;
-    int arr[size];
+    vector<int>v[size];
     for (int i = 0; i < size; i++){
-        cin>>arr[i];
+        cin>>v[i];
     }
-    int q;
-    cout<<"Enter quaries : ";
-    cin>>q;
+    // int q;
+    // cout<<"Enter quaries : ";
+    // cin>>q;
 }
