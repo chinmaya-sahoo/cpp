@@ -13,4 +13,7 @@ int main(){
     // int q;
     // cout<<"Enter quaries : ";
     // cin>>q;
+    const int N=1e5 + 10 ;
+    vector<int>freq(N,0);
+    
 }
