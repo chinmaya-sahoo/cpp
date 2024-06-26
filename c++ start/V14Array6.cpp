@@ -5,4 +5,6 @@ using namespace std;
 int main(){
     int size;
     cout<<"Enter size of array : ";
+    cin>>size;
+    int arr[size];
 }
