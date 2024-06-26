@@ -12,8 +12,8 @@ int main(){
     }
     const int N=1e5 + 10 ;
     vector<int>freq(N,0);// vector named freq of size N is initialized with 0 
-    for (int i = 0; i < n; i++){
-        freq[V[i]]++;
+    for (int i = 0; i < size; i++){
+        freq[v[i]]++;
     }
     int q;
     cout<<"Enter quaries : ";
@@ -21,8 +21,8 @@ int main(){
     while (q--)
     {
         int queryelement;
-        cin>>>queryelement;
-        cout<<freq[queryelement]<endl;
+        cin>>queryelement;
+        cout<<freq[queryelement]<<endl;
         
     }
     
