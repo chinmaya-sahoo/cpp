@@ -14,6 +14,9 @@ int main(){
     // cout<<"Enter quaries : ";
     // cin>>q;
     const int N=1e5 + 10 ;
-    vector<int>freq(N,0);
-    
+    vector<int>freq(N,0);// vector named freq of size N is initialized with 0 
+    for (int i = 0; i < n; i++){
+        freq[V[i]]++;
+    }
+       
 }
