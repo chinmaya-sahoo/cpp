@@ -10,5 +10,7 @@ int main(){
     for (int i = 0; i < size; i++){
         cin>>arr[i];
     }
-
+    int q;
+    cout<<"Enter quaries : ";
+    cin>>q;
 }
