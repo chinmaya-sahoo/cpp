@@ -11,5 +11,10 @@ int main(){
     for (int i = 0; i < size; i++){
         cin>>v[i];
     }
+    sortZerosAndOnes(v);
+    for (int i = 0; i < size; i++){
+        cout<<v[i]<<" ";
+    }
+    cout<<endl;
     
 }
