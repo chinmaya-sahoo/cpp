@@ -7,6 +7,11 @@ void setZerosAndOnes(vector<int> &v){
     for(int ele:v){
         if(ele==0) zeros_count++;
     }
+    for (int i = 0; i < v.size(); i++){
+        if(i<zeros_count) v[i]=0;
+        else v[i]=1;
+    }
+    
 }
 int main(){
     int size;
