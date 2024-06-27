@@ -2,7 +2,7 @@
 #include<iostream>
 #include<vector>
 using namespace std;
-void setZerosAndOnes(vector<int> &v){
+void sortZerosAndOnes(vector<int> &v){
     int zeros_count=0;
     for(int ele:v){
         if(ele==0) zeros_count++;
