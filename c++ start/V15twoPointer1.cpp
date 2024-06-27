@@ -2,6 +2,9 @@
 #include<iostream>
 #include<vector>
 using namespace std;
+void setZerosAndOnes(vector<int> &v){
+    
+}
 int main(){
     int size;
     cout<<"enter size of array : ";
