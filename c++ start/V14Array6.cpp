@@ -6,7 +6,7 @@ int main(){
     int size;
     cout<<"Enter size of array : ";
     cin>>size;
-    vector<int>v[size];
+    vector<int>v(size);
     for (int i = 0; i < size; i++){
         cin>>v[i];
     }
@@ -18,8 +18,7 @@ int main(){
     int q;
     cout<<"Enter quaries : ";
     cin>>q;
-    while (q--)
-    {
+    while (q--){
         int queryelement;
         cin>>queryelement;
         cout<<freq[queryelement]<<endl;
