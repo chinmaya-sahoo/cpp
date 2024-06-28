@@ -3,7 +3,8 @@
 #include<vector>
 using namespace std;
 void sortByParity(vector<int>&v){
-    
+    int left_ptr=0;
+    int right_ptr=v.size()-1;
 }
 int main(){
     int size;
