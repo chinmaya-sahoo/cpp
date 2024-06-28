@@ -7,5 +7,14 @@ int main(){
     cout<<"enter size of array : ";
     cin>>size;
     vector<int>v(size);
-    
+    cout<<"enter elements : "   ;
+    for(int i=0;i<size;i++){
+        cin>>v[i];
+    }
+    sortByParity(v);
+    cout<<"enter elements : "   ;
+    for(int i=0;i<size;i++){
+        cout<<v[i]<<" ";
+    }
+
 }
