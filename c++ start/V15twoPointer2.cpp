@@ -7,9 +7,7 @@ void sortByParity(vector<int>&v){
     int right_ptr=v.size()-1;
     while(left_ptr<right_ptr){
         if(left_ptr%2!=0 && right_ptr%2==0){
-            swap(left_ptr,right_ptr);
-            left_ptr++;
-            right_ptr--;
+            
         }
         if(left_ptr%2==0){
             left_ptr++;
