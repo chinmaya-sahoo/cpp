@@ -4,6 +4,8 @@
 using namespace std;
 int main(){
     int size;
-    cout<<"enter size of array : "
+    cout<<"enter size of array : ";
     cin>>size;
+    vector<int>v(size);
+    
 }
