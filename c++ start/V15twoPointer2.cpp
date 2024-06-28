@@ -12,7 +12,7 @@ int main(){
         cin>>v[i];
     }
     sortByParity(v);
-    cout<<"enter elements : "   ;
+    cout<<"Here is the sorted array : " ;
     for(int i=0;i<size;i++){
         cout<<v[i]<<" ";
     }
