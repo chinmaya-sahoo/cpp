@@ -5,8 +5,12 @@
 using namespace std;
 void sort(vector<int>&v){
     for (int i = 0; i < v.size(); i++){
-        for (int j = i+1; j < v.size(); j++){
-            if(v[i]<v[j]) 
+        for (int j = 0; j < v.size()-1; j++){
+            if(v[j]>v[j+1]){
+                int temp = v[j];
+                v[j]=v[j+1];
+                v[j+1]=temp;
+            }
         }
         
     }
