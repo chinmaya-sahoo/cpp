@@ -25,6 +25,6 @@ int main(){
     sort(v);
 
     for(int ele:v){
-        cout<<pow(ele,2);
+        cout<<pow(ele,2)<<" ";
     }
 }
