@@ -1,9 +1,10 @@
 //given array of integers sorted in inceasing order, return an arra with square of each number sorted in increasing order
 #include<iostream>
 #include<vector>
+#include<math.h>
 using namespace std;
 void sort(vector<int>&v){
-    
+
 }
 int main(){
     vector<int>v={-10,2,3,4,5};
@@ -12,4 +13,8 @@ int main(){
     }
 
     sort(v);
+
+    for(int *ele:v){
+        cout<<pow(*ele,2);
+    }
 }
