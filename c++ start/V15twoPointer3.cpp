@@ -2,9 +2,14 @@
 #include<iostream>
 #include<vector>
 using namespace std;
+void sort(vector<int>&v){
+    
+}
 int main(){
     vector<int>v={-10,2,3,4,5};
     for(int i=0;i<v.size();i++){
         if(v[i]<0) v[i] *= (-1);       
     }
+
+    sort(v);
 }
