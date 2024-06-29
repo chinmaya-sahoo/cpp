@@ -14,7 +14,7 @@ int main(){
 
     sort(v);
 
-    for(int *ele:v){
-        cout<<pow(*ele,2);
+    for(int ele:v){
+        cout<<pow(ele,2);
     }
 }
