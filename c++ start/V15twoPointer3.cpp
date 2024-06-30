@@ -1,5 +1,5 @@
 //given array of integers sorted in inceasing order, return an arra with square of each number sorted in increasing order
-#include<iostream>
+#include<iostream>//You can use abs(v[i]) --> which is an in built function for absolute value
 #include<vector>
 #include<math.h>
 using namespace std;
