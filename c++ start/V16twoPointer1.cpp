@@ -9,6 +9,10 @@ int main(){
         pre_sum += v[i];
         v[i]=pre_sum;
     }
-       
+    for (int i = 0; i < v.size(); i++)
+    {
+        cout<<v[i]<<" ";
+    }
+          
     return 0;
 }
