@@ -2,15 +2,8 @@
 #include<iostream>
 #include<vector>
 using namespace std;
-int main(){
-    int size;
-    cout<<"Enter size :";
-    cin>>size;
-    vector<int>v(size);
-    cout<<"Enter elements :";
-    for (int i = 0; i < v.size(); i++){
-        cin>>v[i];
-    }
+
+bool checkSums(vector<int>&v){
     
     int total_sum=0;
 
@@ -29,5 +22,17 @@ int main(){
     }
 
     return false;
+}
+
+int main(){
+    int size;
+    cout<<"Enter size :";
+    cin>>size;
+    vector<int>v(size);
+    cout<<"Enter elements :";
+    for (int i = 0; i < v.size(); i++){
+        cin>>v[i];
+    }
+    
     
 }
