@@ -7,6 +7,15 @@ int main(){
     cout<<"Enter size :";
     cin>>size;
     vector<int>v(size);
+    cout<<"Enter elements :";
+    for (int i = 0; i < v.size(); i++){
+        cin>>v[i];
+    }
+    
     total_sum=0;
+
+    for (int i = 0; i < v.size(); i++){
+        total_sum += v[i];
+    }
     
 }
