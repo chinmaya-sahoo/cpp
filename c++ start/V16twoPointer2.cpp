@@ -34,5 +34,5 @@ int main(){
         cin>>v[i];
     }
     
-    
+    cout<<checkSums(v)<<endl;
 }
