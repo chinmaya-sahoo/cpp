@@ -12,10 +12,11 @@ int main(){
         cin>>v[i];
     }
     
-    total_sum=0;
+    int total_sum=0;
 
     for (int i = 0; i < v.size(); i++){
         total_sum += v[i];
     }
     
+
 }
