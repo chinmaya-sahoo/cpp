@@ -24,10 +24,11 @@ int main(){
     while(q--){
         int l,r;
         cout<<"Enter ranges:";
-        cin>>l,r;
+        cin>>l>>r;
 
         int ans =0;
         ans=v[r]-v[l-1];
+        cout<<ans<<endl;
     }
     
     return 0;
