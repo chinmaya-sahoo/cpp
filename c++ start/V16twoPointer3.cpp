@@ -1,0 +1,1 @@
+// given array of integers of size n . Answer q quaries  where you need to print the sum of values in a given range of indices from l to r (both included)
