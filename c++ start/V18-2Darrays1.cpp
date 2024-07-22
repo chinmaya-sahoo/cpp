@@ -17,8 +17,5 @@ int main(){
 
     // vector<vector<int>>v(3,vector<int>(4,0));    --> A 3x4 vector with elements initialized to zero
 
-
-    
-    
     return 0;
 }
