@@ -9,14 +9,15 @@
 #include<iostream>
 #include<vector>
 using namespace std;
-int maximumOneRow(vector<vector<int>>&vec){
+// 1st approach 
+int maximumOneRow(vector<vector<int>>&v){
     int maximumOnes = INT_MIN ; 
     int maximumRow= -1 ;
-    int columns = vec[0].size();
-    for (int i = 0; i < vec.size(); i++){
-        for (int j = 0; j < vec[i].size(); j++){
+    int columns = v[0].size();
+    for (int i = 0; i < v.size(); i++){
+        for (int j = 0; j < v[i].size(); j++){
             
-            if(vec[i][j]==1){
+            if(v[i][j]==1){
                 int numberOfOnes = columns - j ;
 
                 if (numberOfOnes > maximumOnes){
@@ -30,6 +31,48 @@ int maximumOneRow(vector<vector<int>>&vec){
     }
     return maximumRow;
 }
+
+// 2nd approach 
+int leftMostOneRow(vector<vector<int>>&v){
+    int leftMostOne = -1 ;
+    int maxOneRow = -1 ;
+    int j = v[0].size()-1;
+    // step-1  : -
+
+    // Finding leftmost one in 0th row
+
+    // type-1
+    // for (int i = v[0].size()-1; i >= 0; i--){
+    //     if(v[0][i]==1){
+    //         leftMostOne = i ;
+    //     }
+    //     else{
+    //         break;
+    //     }
+    // }
+
+    // type -2 
+    while (j>=0 && v[0][j]==1){
+        j--;
+        leftMostOne = j ; 
+        maxOneRow = 0 ;
+    }
+
+    // step-2 : -
+    //  check in rest of rows if we can find a one left to the 'leftMostOne' 
+
+    for (int i = 0; i < v.size(); i++){
+        while (j>=0 && v[i][j]==1){
+            leftMostOne = j ;
+            j--;
+            maxOneRow = i;
+        }
+        
+    }
+    
+    return maxOneRow;
+}
+
 int main(){
     int rows,cols;
     cout<<"Enter rows and columns : ";
