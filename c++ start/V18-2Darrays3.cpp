@@ -9,7 +9,41 @@
 #include<iostream>
 #include<vector>
 using namespace std;
-int main(){
+int maximumOneRow(vector<vector<int>>&vec){
+    int maximumOnes = INT_MIN ; 
+    int maximumRow= -1 ;
+    int columns = vec[0].size();
+    for (int i = 0; i < vec.size(); i++){
+        for (int j = 0; j < vec[i].size(); j++){
+            
+            if(vec[i][j]==1){
+                int numberOfOnes = columns - j ;
 
+                if (numberOfOnes > maximumOnes){
+                    maximumOnes = numberOfOnes;
+                    maximumRow = i ;
+                }
+                
+            }
+        }
+        
+    }
+    return maximumRow;
+}
+int main(){
+    int rows,cols;
+    cout<<"Enter rows and columns : ";
+    cin>>rows>>cols;
+
+    vector<vector<int>>v(rows,vector<int>(cols));
+    cout<<"Enter elements :";
+    for (int i = 0; i < rows; i++){
+        for (int j = 0; j < cols; j++){
+         cin>>v[i][j];   
+        }
+    }
+    
+    int res = maximumOneRow(v);
+    cout<<res<<endl;
     return 0;
 }
