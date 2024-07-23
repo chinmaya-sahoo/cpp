@@ -1,6 +1,7 @@
 //Rotate array by k steps...where(may k>size or k<size) with vector
 #include<iostream>
 #include<vector>
+#include<algorithm>
 using namespace std;
 int main(){
     vector<int>v;
