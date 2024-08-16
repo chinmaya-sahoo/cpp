@@ -19,23 +19,35 @@ int main(){
     int direction = 0;
 
     while(){
-        // right to left 
-        for (int j = 0; j < v[0].size(); j++){
-            cout >> v[i][j] ; 
+        // left to right 
+        if (direction==0){
+            for (int col = left; col <= right; col++){
+                cout << v[top][col] <<" "; 
+            }
+            top++;
         }
         // top to bottom 
-        for (int j = 0; j < v[0].size(); j++){
-            cout >> v[i][j] ; 
+        else if (direction==1){
+            for (int row = top; row <= bottom; row++){
+                cout << v[row][right] <<" " ; 
+            }
+            right--;
         }
-        // left to right 
-        for (int j = 0; j < v[0].size(); j++){
-            cout >> v[i][j] ; 
+        // right to left 
+        else if (direction==2){
+            for (int col = left; col <= right; col--){
+                cout << v[bottom][col] << " "; 
+            }
+            bottom--;
         }
         // bottom to top 
-        for (int j = 0; j < v[0].size(); j++){
-            cout >> v[i][j] ; 
+        else{
+            for (int row = bottom; row <= top; row--){
+                cout << v[row][left] <<" " ; 
+            }
+            left++;
         }
-  
+       
     }
     
     return 0;
