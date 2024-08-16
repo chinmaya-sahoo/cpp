@@ -13,10 +13,12 @@ int main(){
     }
     
     int left = 0;
-    int right = v[0].size();
+    int right = v[0].size()-1;
     int top = 0;
-    int bottom = v.size();
-    for (int i = 0; i < v.size(); i++){
+    int bottom = v.size()-1;
+    int direction = 0;
+
+    while(){
         // right to left 
         for (int j = 0; j < v[0].size(); j++){
             cout >> v[i][j] ; 
@@ -33,8 +35,8 @@ int main(){
         for (int j = 0; j < v[0].size(); j++){
             cout >> v[i][j] ; 
         }
+  
     }
     
-
     return 0;
 }
