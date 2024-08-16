@@ -4,6 +4,8 @@
 #include<algorithm>
 using namespace std; 
 int main(){
+    int m,n;
+    cin >> m >> n ;
     vector<vector<int>>v(m,vector<int>(n));
     cout <<"Enter the elements of the vector :";
     for (int i = 0; i < v.size(); i++){
@@ -18,7 +20,7 @@ int main(){
     int bottom = v.size()-1;
     int direction = 0;
 
-    while(){
+    while(top <= bottom && left <= right){
         // left to right 
         if (direction==0){
             for (int col = left; col <= right; col++){
@@ -35,19 +37,19 @@ int main(){
         }
         // right to left 
         else if (direction==2){
-            for (int col = left; col <= right; col--){
+            for (int col = right; col >= left; col--){
                 cout << v[bottom][col] << " "; 
             }
             bottom--;
         }
         // bottom to top 
         else{
-            for (int row = bottom; row <= top; row--){
+            for (int row = bottom; row >= top; row--){
                 cout << v[row][left] <<" " ; 
             }
             left++;
         }
-       
+       direction = (direction+1)%4;
     }
     
     return 0;
