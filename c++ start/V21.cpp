@@ -1,0 +1,1 @@
+// given array of m x n .  find the sum of the rectangle in between (l1,r1) and (l2,r2);(3 alternative mathodes)
