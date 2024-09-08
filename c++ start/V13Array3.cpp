@@ -11,8 +11,7 @@ int main()
         cin>>v[i];
     }
     
-    // for (int i = 0; i < 6; i++)
-    // {
+    // for (int i = 0; i < 6; i++) {
     //     cout<<v[i]<<" ";
     // }
 
@@ -20,8 +19,7 @@ int main()
     cout<<"Enter x : " ;
     cin>>x;//Enter x
     
-    for (int idx = 0; idx < 6; idx++)
-    {
+    for (int idx = 0; idx < 6; idx++){
         if(v[idx]==x){
             ocr=idx;
         }

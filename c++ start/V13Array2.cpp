@@ -41,8 +41,7 @@ int main()
     // while loop
     vector<int> v;
     int i = 0;
-    while (i < 5)
-    {   
+    while (i < 5){   
         int ele;
         cin >> ele;
         v.push_back(ele);
@@ -50,8 +49,7 @@ int main()
     }
 
     int idx = 0;
-    while (idx < 5)
-    {
+    while (idx < 5){
         cout << v[idx]<<" ";
         idx++;
     }

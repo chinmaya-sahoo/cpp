@@ -13,7 +13,7 @@ int main(){
     //     cin>>ele;
     // }
     
-    // i/p wuth while loop 
+    // i/p with while loop 
     int idx =0;
     while(idx<5){
         cin>>vowel[idx];
