@@ -4,7 +4,7 @@ using namespace std;
 
 class Teacher{
     private:
-    double salary;
+    double salary; // data hiding
 
     public:  
     string name; 

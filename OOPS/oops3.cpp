@@ -1,0 +1,1 @@
+// Encapulations :  Encapsulation is 'wrapping up' pf data & member functions in a single unit called class
