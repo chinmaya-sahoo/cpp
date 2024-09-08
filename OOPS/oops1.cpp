@@ -26,5 +26,6 @@ int main(){
     t1.dept = "Computer Science";
     t1.subject = "C++";
 
+    t1.changeDept("Mathematics");
     return 0;
 }
