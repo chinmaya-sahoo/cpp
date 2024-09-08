@@ -5,7 +5,9 @@ using namespace std;
 class Teacher{
     private:
     double salary;
+
     public:  
+    string name; 
     string dept;
     string subject;
 
@@ -21,10 +23,10 @@ class Teacher{
 
 
     //getter
-    void getSalary(){
+    double getSalary(){
        return salary;
     }
-}
+};
 
 int main(){
     Teacher t1;

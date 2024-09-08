@@ -18,7 +18,7 @@ class Teacher{
         dept = newDept;
     }
 
-}
+};
 
 int main(){
     Teacher t1;
