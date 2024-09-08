@@ -22,6 +22,9 @@ class Teacher{
 
 int main(){
     Teacher t1;
+    t1.name = "Asish";
+    t1.dept = "Computer Science";
+    t1.subject = "C++";
 
     return 0;
 }
