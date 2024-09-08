@@ -5,7 +5,6 @@
 // ->  only called once (auto) , at object creation
 // ->  memeory allocation happens when constructor is called
 
-
 #include<iostream>
 #include<string>
 using namespace std;
@@ -19,7 +18,10 @@ class Teacher{
     string dept;
     string subject;
 
-    
+    Teacher(){
+        cout << "constructor is called" << endl;
+        dept = "Mathmatics";
+    }
 };
 
 int main(){
@@ -28,6 +30,6 @@ int main(){
     t1.dept = "Computer Science";
     t1.subject = "C++";
 
-
+    cout<< t1.dept << endl;
     return 0;
 }
