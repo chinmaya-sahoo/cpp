@@ -1,5 +1,4 @@
-// type of constructor (i)Non-Parameterized constructor , (ii) parameterized constructor , (iii) copy constructor
-
+// copy constructor (default) used to copy properties of one object into another .
 #include<iostream>
 #include<string>
 using namespace std;
@@ -21,12 +20,6 @@ class Teacher{
         dept = d;
         subject = s;
 
-
-    // this->name = name ;     // (*this).name = name ;
-    // this->dept = dept;
-    // this->subject = subject;
-
-
     }
 
 
@@ -35,14 +28,26 @@ class Teacher{
     Teacher(){
         cout << "constructor is called" << endl;
     }
+
+    void getInfo(){
+        cout << "Name: " << name << endl;
+        cout << "Dept: " << dept << endl;
+    }
+
+    // manually ceating copy constructor
+    Teacher(Teacher &orgObj){
+        this-> name = orgObj.name;
+        this->dept = orgObj.dept;
+        this->subject = orgObj.subject;
+        this->salary = orgObj.salary;
+    }
 };
 
 int main(){
     Teacher t1("chinmaya", "CSE" , "DSA");
-    Teacher t2;
+    Teacher t2(t1); // copy constructor calling by default invoke
 
-
-    // Passing constructor functions with same name but different parameters is  : constructor overloading
+    t2.getInfo();
 
     // cout<< t1.dept << endl;
     return 0;
