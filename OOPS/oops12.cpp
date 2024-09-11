@@ -2,4 +2,5 @@
 // (i) Multi-level inheritance
 //   Grandparent(name,age) -> Parent -> Child 
 
-// (ii)
+// (ii) Heirarchial inheritance
+//  (iii)Hybrid inheritance(mixture of Multi-level inheritance and Heirarchial inheritance)
