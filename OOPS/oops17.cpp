@@ -18,7 +18,7 @@
 // -> also known as 'access specifiers' / 'access modifiers' 
 
 // using abstract classes -->
-//  -> Abstract classes are used to provide a base class from which other classes can be derived
+//  -> Abstract classes are used to provide a base class from which other classes can be derived .
 //  -> They can't be instantiated and are meant to be inherited .   ( 'instance' -> 'object')
 //  -> Abstract classes are typically used to define an interface for derived classes .
 
@@ -28,28 +28,23 @@
 
 
 #include<iostream>
+#include<string>
 using namespace std;
-class parent{
-    public:
-    string name;
 
-    void getInfo(){
-        cout<<"Parent class \n";
-    }
-    
+
+class shape{   // abstract class
+    virtual void draw() = 0 ;  // pure virtual function
 };
 
-class child : public parent {
+class circle : public shape {
     public:
-    void getInfo(){
-        cout<<"Child class \n";
+    void draw(){
+        cout<<"Drawing a circle \n";
     }
 };
 
 int main(){
-    parent p1;
-    p1.getInfo();
-    child c1;
-    c1.getInfo();
+    circle c1;
+    c1.draw();
     return 0;
 }
