@@ -21,10 +21,12 @@ class student{
     }
     
 };
+
+
 int main(){
     student s1;
     student s2("John");
+    cout<<s2.name<<endl;
 
-    
     return 0;
 }
