@@ -1,6 +1,6 @@
 // Run Time Polymorphism
 // eg:-
-//  virtual function -> A virtual function is a member function that you expect to be redefined in derived classes .
+// 'virtual function' -> A virtual function is a member function that you expect to be redefined in derived classes .
 
 // -> virtual function are dynamic in nature .
 // -> Defined by the keyword "virtual" inside a base class and are alaways declared with a base class and over-ridden in a child class .
