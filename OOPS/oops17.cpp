@@ -7,6 +7,9 @@
 // -> A virtual function is called during runtime
 
 
+// 'Abstraction' :- Hiding all unnecessary details & showing only the important parts 
+
+// -> also known as 'access specifiers' / 'access modifiers' 
 
 #include<iostream>
 using namespace std;
